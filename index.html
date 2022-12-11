@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)https://xr.cmiivip.com/utoPlayer/index.html?videoUrl=https://shawn009.oss-accelerate.aliyuncs.com/tai2.mp4 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>H5播放</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+            padding: 0px;
+            margin: 0px;
+        }
+        .container {
+            width: 100vw;
+            height: 50vw;
+			position: relative;
+        }
+        .dialog{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:black;
+            /* display: flex; */
+            color: blanchedalmond;
+            text-align: center;
+        }
+        .dialog span{
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            /* bottom: 0; */
+            transform: translateY(-50%);
+        }
+    </style>
+    <script type="text/javascript" src="./h5f/UtoVRPlayerGuide.js"></script>
+<script charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/btype.js"></script><script type="text/javascript" charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/chrome.js"></script><link type="text/css" rel="stylesheet" charset="utf-8" href="./h5f/videobar.css"><script type="text/javascript" src="./h5f/UtoVRPlayer.js" charset="utf-8"></script><script type="text/javascript" src="./h5f/video_toolbar.js" charset="utf-8"></script><script type="text/javascript" src="./h5f/hls.js" charset="utf-8"></script><style type="text/css">@keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } .resize-triggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .resize-triggers, .resize-triggers > div, .contract-trigger:before { content: ' '; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; } .resize-triggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }</style><style id="lbjnzsc5.6ec">
+        ._webfullscreen_box_size_ {
+          width: 100% !important;
+          height: 100% !important;
+        }
+        ._webfullscreen_ {
+          display: block !important;
+          position: fixed !important;
+          width: 100% !important;
+          height: 100% !important;
+          top: 0 !important;
+          left: 0 !important;
+          background: #000 !important;
+          z-index: 999999 !important;
+        }
+        ._webfullscreen_zindex_ {
+          z-index: 999999 !important;
+        }
+      </style></head><remove-web-limits-iqxin id="rwl-iqxin" class="rwl-exempt" style="position: fixed; top: 626px; left: 0px;"><qxinbutton type="qxinbutton" id="rwl-setbtn"> set </qxinbutton> <lalala style="cursor:move; font-size:12px;">限制解除</lalala> <input type="checkbox" name="" id="black_node"><style type="text/css">#rwl-iqxin{position:fixed;transform:translate(-95px,0);width:85px;height:25px;font-size:12px;font-weight: 500;font-family:Verdana, Arial, '宋体';color:#fff;background:#333;z-index:2147483647;margin: 0;opacity:0.05;transition:0.3s;overflow:hidden;user-select:none;text-align:center;white-space:nowrap;line-height:25px;padding:0 16px;border:1px solid #ccc;border-width:1px 1px 1px 0;border-bottom-right-radius:5px;box-sizing: content-box;}#rwl-iqxin input{margin: 0;padding: 0;vertical-align:middle;-webkit-appearance:checkbox !important;-moz-appearance:checkbox;position: static;clip: auto;opacity: 1;cursor: pointer;}#rwl-iqxin.rwl-active-iqxin{left: 0px;transform:translate(0,0);opacity: 0.9;height: 32px;line-height: 32px}#rwl-iqxin label{margin:0;padding:0;font-weight:500;}#rwl-iqxin #rwl-setbtn{margin: 0 4px 0 0;padding: 0 0 0 4px;border: none;border-radius: 2px;cursor: pointer;background: #fff;color: #000;} </style></remove-web-limits-iqxin>
+
+<body>
+    <div id="utoPlayer" class="container"><div name="SceneViewer" style="position: absolute; overflow: hidden; width: 100%; height: 100%; background-color: black; left: 0px; top: 0px; z-index: 0;"><div id="scenePlayDom" tabindex="-1" style="position: absolute; overflow: hidden; height: 100%; width: 100%; outline: none; user-select: none;"><div id="cubeDom" style="position: absolute; width: 100%; height: 100%; pointer-events: none;"><canvas style="position: absolute; width: 2560px; height: 1241px; left: 0px; top: 0px;" width="3840" height="1861"></canvas></div></div><div class="resize-triggers"><div class="expand-trigger"><div style="width: 2561px; height: 1242px;"></div></div><div class="contract-trigger"></div></div><div id="videoToolbar" style="bottom: -41px; transition: bottom 0.5s ease 0s;"><div id="videoBG"><div id="videoTogglePlay" class="floatL floatW    videoPlay"></div><div id="videoScroll" class="   videoScrollTop" style="width: 100%;"><div id="videoScrollBG"></div><div id="videoScrollBG1" style="width: 70.7403%;"></div><div id="videoScrollBG2" style="width: 69.6534%;"></div></div><div id="videoTime" style="margin-left: 0px;">02:39/03:48</div><div id="videoFullScreen" class="floatR floatW  videoFullScreen1"></div><div id="videoViewPortToggle" class="floatR floatW  videoViewPort1" style="display: none;"></div></div></div></div></div>
+    <!-- <div id="dialog" class="dialog">
+        <span>加载中...</span>
+    </div> -->
+
+<script language="javascript" type="text/javascript">
+    var App = {
+        init:function() {
+            //IE版本判断
+            if(document.documentMode && document.documentMode < 11){
+                alert('播放器不支持该版本浏览器,请升级至IE11及以上或使用谷歌、火狐等浏览器进行播放');
+                return;
+            }
+            //播放地址
+            var videoUrl = this.getQueryString("videoUrl");
+            if(!videoUrl){
+                alert('请传入播放地址');
+                return;
+            }
+            App.videoUrl = videoUrl;
+            var isLive = this.getQueryString("isLive") || false;
+            //页面参数loop为1循环播放
+            var isLoop = this.getQueryString("loop") == "1" ? true:false;
+            App.isLoop = isLoop;
+            // 页面参数isGyro为1启动陀螺仪
+            var isGyro = this.getQueryString("isGyro") == "true" ? true:false;
+            App.isGyro = isGyro;
+            App.getParentIfr();
+            App.fullScreen = false;//默认非全屏
+            App.errorNum = 0; // 链接错误的时间
+            /*播放器参数配置*/
+            var params = {
+                container: document.getElementById("utoPlayer"),
+                name: "SceneViewer", //播放器名称
+                dragDirectionMode: true, //播放器拖动模式
+                loadingImg:"<img src='./imgs/loading.gif' width='120' height='120' alt=''>",
+                width: 800, //播放器的width
+                height: 500, //播放器的height
+                isGyro: App.isGyro,//是否启用陀螺仪
+                useDefaultVideoBar: true,//是否显示工具栏，true为显示.如果为直播的话可以外部写样式隐藏掉进度条和时间，进度条dom元素的id为videoScroll，时间dom的id为videoTime
+                /*fullScreenMode:true,//全屏模式 ===>如果是配置了该参数，将忽略width和height的配置，播放器将取当前窗口的尺寸作为播放器的初始尺寸*/
+                scenesArr: [
+                    {
+                        sceneId: "test1k",//sceneId场景编号，可通过场景编号切换场景
+                        sceneFilePath: videoUrl,
+                        sceneType: "Video",
+                        initPan: 180,//initPan初始水平角度，初始水平角度，全景图中间为180度，最左0，最右360
+                        initFov: 150,//initFov初始能看到水平最大的角度范围,最小值10，最大值150，电脑120，手机90，或者直接默认值100，最合适值需要慢慢调
+                        isVideoLoop: isLoop,//是否循环播放,根据页面传参决定
+                        isVideoAutoPlay: false,//是否自动播放
+                        //isAutoRotate:true//是否自动旋转
+                    },
+                ],
+                loadedStartCallBack:function() {//这里组件已经渲染完成，可以拿到相应dom了
+                    //隐藏VR眼镜模式
+                    document.getElementById("videoViewPortToggle").style.display = "none";
+                    if (isLive == 'true') {//是直播,隐藏时间栏和进度条
+                        document.getElementById("videoScroll").style.display = "none";
+                        document.getElementById("videoTime").style.display = "none";
+                    }
+                },
+                fsCallBack:function() {//不支持全屏的回调,当在不支持全屏的浏览器中用css设置元素高度来做全屏模式
+                    if(!App.parentIfr){
+                        alert("该浏览器暂不支持全屏功能");
+                        return;
+                    }
+                    App.fullScreen = !App.fullScreen;
+                    var fullDom = document.getElementById("videoFullScreen");
+                    if(App.fullScreen){
+                        // App.parentIfr.classList.add('full-screen');
+                        App.parentIfr.postMessage({fullScreen:'1'},"*");
+                        fullDom.className = fullDom.className.replace('videoFullScreen1','videoFullScreen2');
+                    }else{
+                        // App.parentIfr.classList.remove('full-screen');
+                        App.parentIfr.postMessage({fullScreen:'0'},"*");
+                        fullDom.className = fullDom.className.replace('videoFullScreen2','videoFullScreen1');
+                    }
+                },
+                videoPlayEndCallBack:function() {
+                    //window.parent !== window ? window.parent.location.reload() : window.location.reload();
+                    //如果是循环播放则不刷新页面
+                    if(App.isLoop){
+                        return;
+                    }
+                    if(App.parentIfr){
+                        App.parentIfr.postMessage({videoPlayEnd:'1'},"*");
+                    }else{
+                        window.location.reload()
+                    }
+                },
+                sceneEventClickCallBack:function() {
+                    var toolBar = document.getElementById("videoToolbar");
+                    var bot = toolBar.style.bottom;
+                    toolBar.style.bottom = bot == "-41px" ? "0px" : "-41px";
+                    toolBar.style.transition = "bottom .5s ease";
+                },
+                initOverCallBack:function(){
+                    App.playObj = this;
+                },
+                errorCallBack:function(e){
+                    console.log("errorCallBack:" + e);
+                    //App.playObj.api_changeVideoPath(App.videoUrl);
+                },
+                videoUpdateCallBack:function(){
+                    // console.log('videoUpdateCallBack');
+                    App.oldTime = App.playObj.api_getVideoCurTime();
+                    App.playStatusCheck();
+                },
+                videoCanPlayerCallBack:function(){
+                    console.log("videoCanPlayer");
+                },
+                videoLoadMetaDataCallBack:function(){
+                    // 重新恢复播放时，将错误次数置为0
+                    App.errorNum = 0;
+                    console.log("videoLoadMetaData");
+                    // document.getElementById("dialog").style.display = "none";
+                }
+            };
+            /*初始化开始*/
+            window.onload = function () {
+                //根据环境自动选择flash或html5进行渲染
+                //initLoad(params);
+                //只选择html5进行渲染
+                initHTML5Load(params);
+            };
+        },
+        getQueryString:function(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return (r[2]);
+            return null;
+        },
+        getParentIfr:function(){
+            var ifr = window.parent !== window ? window.parent : null;
+            App.parentIfr = ifr;
+        },
+        playStatusCheck:function(){
+            if(!App.playObj.api_getVideoPlayStatus()){
+                console.log("status============"+App.playObj.api_getVideoPlayStatus());
+                clearTimeout(App.timer);
+                return;
+            }
+            if(App.timer) clearTimeout(App.timer);
+            App.timer = setTimeout(function(){
+                var curTime = App.playObj.api_getVideoCurTime();
+                console.log("curTime========="+curTime);
+                console.log("oldTime========="+App.oldTime);
+                // if(App.oldTime == curTime){
+                console.log("视频恢复中......");
+                //卡顿8秒执行恢复
+                App.playObj.api_changeVideoPath(App.videoUrl);
+                // }
+                
+                /* 恢复多次未成功 */ 
+                App.errorNum++;
+                if (App.errorNum === 4) {
+                    App.parentIfr.postMessage({loadingTimeout: '1'},"*");
+                    App.errorNum = 0;
+                }
+                /* 恢复多次未成功 */ 
+
+            },8000);
+        }
+    };
+    App.init();
+</script>
+</body></html>
